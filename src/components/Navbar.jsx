@@ -14,7 +14,7 @@ export default function Navbar() {
 
   return (
     <header className="w-full bg-white sticky top-0 z-50">
-      <div className="relative max-w-7xl mx-auto px-4 py-4 flex items-center justify-between">
+      <div className="relative max-w-7xl mx-auto py-4 flex items-center justify-between">
         {/* Mobile Hamburger */}
         <button
           onClick={() => setIsOpen(!isOpen)}
