@@ -9,12 +9,14 @@ import search from "../assets/search.svg";
 import cart from "../assets/cart.svg";
 import { Menu, X } from "lucide-react";
 
+
+
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
     <header className="w-full bg-white sticky top-0 z-50">
-      <div className="relative max-w-7xl mx-auto py-4 flex items-center justify-between">
+      <div className="relative max-w-4xl w-full px-5 xl:px-0 mx-auto py-4 flex items-center justify-between">
         {/* Mobile Hamburger */}
         <button
           onClick={() => setIsOpen(!isOpen)}
@@ -35,13 +37,14 @@ export default function Navbar() {
         {/* Center Logo */}
         <Link
           href="/"
-          className="absolute left-1/2 -translate-x-1/2 top-14  md:top-16 
-          -translate-y-1/2"
+          className="absolute left-1/2 -translate-x-1/2 top-14   
+          -translate-y-1/2 bg-white 
+           p-1 rounded-[40px]"
         >
           <Image
             src={logo}
             alt="JF Products Logo"
-            className="object-contain w-[80px] md:w-[100px] h-[90px] md:h-[110px]"
+            className="object-contain w-[80px]  h-[90px]"
             priority
           />
         </Link>

@@ -2,4 +2,31 @@
 
 .heroItemBg {
     background-image: url('../assets/heron.png');
+    background-position: center;
+    background-size: cover;
+    /* width: 320px;
+    height: 320px; */
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #444;
+
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
