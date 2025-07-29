@@ -3,13 +3,14 @@ import marqu from "../assets/marqu.png";
 import Image from "next/image";
 export default function MarqueeSection  ()  {
   return (
+    <section className="max-w-7xl mx-auto overflow-hidden pt-10 sm:pt-15 md:pt-23">
    <div
   style={{
     transformOrigin: "left center",
     transform: "rotate(-5deg)",
   }}
-  className="border-t border-b border-black overflow-hidden bg-[#D9ECFF] 
-  inline-block py-4 w-full mt-25"
+  className=" border-t border-b border-black overflow-hidden bg-[#D9ECFF] 
+  inline-block py-4 w-full mt-15"
 >
   <Marquee
     gradient={false}
@@ -47,9 +48,29 @@ export default function MarqueeSection  ()  {
         Shipping Across India
       </p>
     </div>
+    <div className="flex items-center gap-3 md:gap-5 mr-6 md:mr-10">
+      <Image
+        src={marqu}
+        alt="sponsor logo"
+        className="w-8 h-8 md:w-12 md:h-12"
+      />
+      <p className="text-[#002B55] font-medium text-sm sm:text-base md:text-xl">
+        Quality Product
+      </p>
+    </div>
+    <div className="flex items-center gap-3 md:gap-5 mr-6 md:mr-10">
+      <Image
+        src={marqu}
+        alt="sponsor logo"
+        className="w-8 h-8 md:w-12 md:h-12"
+      />
+      <p className="text-[#002B55] font-medium text-sm sm:text-base md:text-xl">
+        Shipping Across India
+      </p>
+    </div>
   </Marquee>
 </div>
-
+</section>
 
   )
 }

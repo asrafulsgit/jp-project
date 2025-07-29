@@ -6,7 +6,7 @@ import light from "../assets/banner-light.png";
 
 export default function WhyUs() {
   return (
-    <section className="pt-15 pb-20">
+    <section className="pt-15 ">
       <div className="max-w-6xl mx-auto px-5">
         <header className="flex flex-col items-center justify-center">
           <h1 className="font-medium text-[42px] text-[#1A1A1A]">Why Us</h1>
@@ -45,14 +45,16 @@ export default function WhyUs() {
           </div>
 
           {/* card 2 */}
-          <div className="lg:mb-20 relative lg:max-w-md w-full border bg-[#002B55] text-white rounded-xl p-6 shadow-md text-left space-y-4 overflow-hidden">
+          <div className="lg:mb-20 relative lg:max-w-md w-full border
+           bg-[#002B55] text-white rounded-xl p-6 shadow-md text-left 
+           space-y-4 overflow-hidden">
             {/* Background light image */}
             <div className="absolute -top-100 -right-100 z-0 ">
               <Image
                 src={light}
                 alt="card background light"
                 className="w-full h-full object-cover"
-                priority
+                
               />
             </div>
 

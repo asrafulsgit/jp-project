@@ -1,14 +1,22 @@
 import Image from 'next/image';
 import logo from '../assets/logo.png'
 import light from '../assets/banner-light.png'
+import fb from '../assets/fb.png'
+import ins from '../assets/ins.png'
+import yt from '../assets/yt.png'
+
 export default function Footer() {
   return (
-    <footer className="px-5">
+  <> 
+  <footer className="px-5 max-w-7xl mx-auto">
 
       <div className="relative overflow-hidden bg-[#002B55] p-5 md:p-10  lg:p-20  rounded-[24px]
          mx-auto ">
 
-        <div className='grid 
+           
+
+        <div className='z-10'>
+           <div className='grid 
       md:grid-cols-7 gap-10 lg:gap-25 items-start'>
                 {/* Newsletter Signup */}
                 <div className="col-span-3">
@@ -61,9 +69,9 @@ export default function Footer() {
         </div>
 
         {/* Logo and Contact */}
-        <div className=" z-15 grid grid-cols-2 sm:grid-cols-3 items-center  h-full mt-15">
+        <div className="grid grid-cols-2 sm:grid-cols-3 items-center  h-full mt-15">
           {/* Logo */}
-          <div className="sm:col-span-2 sm:flex items-center space-y-6  sm:space-x-6">
+          <div className=" sm:col-span-2 sm:flex items-center space-y-6  sm:space-x-6">
             <div
                       className="bg-white 
                        p-1 rounded-[40px] w-[65px]  h-[75px] sm:w-auto sm:h-auto"
@@ -92,14 +100,34 @@ export default function Footer() {
           </div>
 
         </div>
-
-        {/* bg light */}
-        <div className='absolute z-10 -left-100 -bottom-100'>
-            <Image src={light} alt='bg white' />
         </div>
-
-
+        
+        {/* bg light */}
+                <div className='absolute  -left-100 -bottom-100  z-0 pointer-events-none'>
+                    <Image src={light} alt='bg white' priority />
+                </div>
       </div>
+
     </footer>
+    <section className='py-5 px-5 '>
+            <div className='max-w-4xl mx-auto 
+            flex flex-col gap-3 sm:flex-row justify-center sm:justify-between items-center'>
+              <p className='font-normal text-center'>Copyright © 2025 JF Products. All rights reserved</p>
+              <div className='flex gap-5'>
+                <button className='w-10 h-10 flex cursor-pointer
+                justify-center items-center rounded-full bg-[#F2F4F6]
+                '>
+                  <Image src={fb} alt='facebook' className=''/>
+                </button>
+                <button className='w-10 h-10 flex cursor-pointer
+                justify-center items-center rounded-full bg-[#F2F4F6]
+                '><Image src={ins} alt='instagram' className=''/></button>
+                <button className='w-10 h-10 flex cursor-pointer
+                justify-center items-center rounded-full bg-[#F2F4F6]
+                '><Image src={yt} alt='youtube' className=''/></button>
+              </div>
+            </div>
+    </section>
+  </>
   );
 }

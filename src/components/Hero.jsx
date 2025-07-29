@@ -39,8 +39,8 @@ export default function Hero() {
   ];
 
   return (
-    <section className="w-full bg-white">
-      <div className="relative overflow-visible px-5 mx-auto">
+    <section className="max-w-7xl mx-auto  bg-white">
+      <div className="relative  overflow-visible px-5 ">
         {/* Navigation Buttons (left/right of center slide) */}
         <button
           onClick={() => swiperRef.current?.slidePrev()}
