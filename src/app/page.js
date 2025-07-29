@@ -1,3 +1,5 @@
+import Contact from "@/components/Contact";
+import Footer from "@/components/Footer";
 import Hero from "@/components/Hero";
 import MarqueeSection from "@/components/Marquee";
 import Navbar from "@/components/Navbar";
@@ -18,6 +20,8 @@ export default function Home() {
       <WhyUs />
       <MarqueeSection />
       <Testimonials />
+      <Contact />
+      <Footer />
     </>
   );
 }
