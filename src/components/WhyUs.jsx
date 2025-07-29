@@ -1,11 +1,12 @@
 import Image from "next/image";
 import flag from "../assets/flag.png";
 import settings from "../assets/settings.png";
+import circle from "../assets/circle.png";
 import light from "../assets/banner-light.png";
 
 export default function WhyUs() {
   return (
-    <section className="pt-12 pb-20">
+    <section className="pt-15 pb-20">
       <div className="max-w-6xl mx-auto px-5">
         <header className="flex flex-col items-center justify-center">
           <h1 className="font-medium text-[42px] text-[#1A1A1A]">Why Us</h1>
@@ -20,9 +21,9 @@ export default function WhyUs() {
         lg:grid-cols-3 gap-8 justify-items-center w-full">
           {/* card 1 */}
           <div className="lg:mt-20 relative overflow-hidden lg:max-w-md 
-          w-full border rounded-xl p-6 shadow-md text-left space-y-4">
+          w-full  rounded-xl p-6   text-left space-y-4 bg-blue-100/50">
             <div className="card-body z-10 relative">
-              <div className="w-8 h-8">
+              <div className="w-10 h-10">
                 <Image src={flag} alt="Durability Icon" />
               </div>
               <div className="mt-6">
@@ -66,14 +67,10 @@ export default function WhyUs() {
               </div>
               <div className="mt-6">
                 <h2 className="text-[22px] sm:text-[26px] font-medium">
-                  Unmatched Durability with Corrosion-Free Technology
+                  Customer-Centric Approach
                 </h2>
                 <p className="mt-3 font-normal text-white/50 text-[15px] sm:text-[17px] leading-relaxed">
-                  Our JF-270 barbed wire features a robust 270 GSM zinc coating,
-                  ensuring superior resistance against rust and corrosion. Paired
-                  with stainless steel binding wire, our fencing solutions are
-                  designed to withstand harsh environmental conditions, offering
-                  longevity and reliability.
+                  At JF Products, customer satisfaction is paramount. We pride ourselves on delivering timely services, maintaining transparent communication, and ensuring a seamless purchasing experience. Our commitment to excellence is reflected in the positive feedback from our valued clients.
                 </p>
               </div>
             </div>
@@ -81,21 +78,17 @@ export default function WhyUs() {
 
           {/* card 3 */}
           <div className="lg:mt-20 relative overflow-hidden lg:max-w-md 
-          w-full border rounded-xl p-6 shadow-md text-left space-y-4">
+          w-full rounded-xl p-6 text-left space-y-4 bg-blue-100/50">
             <div className="card-body z-10 relative">
-              <div className="w-8 h-8">
-                <Image src={flag} alt="Durability Icon" />
+              <div className="w-12 h-12">
+                <Image src={circle} alt="Durability Icon" />
               </div>
               <div className="mt-6">
                 <h2 className="text-[22px] sm:text-[26px] font-medium text-[#1A1A1A]">
-                  Unmatched Durability with Corrosion-Free Technology
+                  Innovative and Diverse Product Range
                 </h2>
                 <p className="mt-3 font-normal text-gray-600 text-[15px] sm:text-[17px] leading-relaxed">
-                  Our JF-270 barbed wire features a robust 270 GSM zinc coating,
-                  ensuring superior resistance against rust and corrosion. Paired
-                  with stainless steel binding wire, our fencing solutions are
-                  designed to withstand harsh environmental conditions, offering
-                  longevity and reliability.
+                  We offer a wide array of fencing solutions, including Polyhex Mesh, Australian Trellis, and GI Poultry Mesh, catering to various needs from agricultural to residential applications. Our products combine functionality with aesthetic appeal, ensuring both security and style.
                 </p>
               </div>
             </div>
@@ -103,7 +96,7 @@ export default function WhyUs() {
               <Image src={light} alt="cardbg" />
             </div>
           </div>
-          
+
         </div>
       </div>
     </section>
